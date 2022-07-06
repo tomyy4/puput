@@ -63,6 +63,7 @@ class Category(models.Model):
         on_delete=models.SET_NULL
     )
     description = models.CharField(max_length=500, blank=True, verbose_name=_('Description'))
+    image_url = models.CharField(max_length=255, verbose_name=_('URL'), blank=True, default=True)
 
     objects = CategoryManager()
 
